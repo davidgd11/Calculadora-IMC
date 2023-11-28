@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="illustration.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+
+    <main id="container">
+
+        <section id="calculator">
+            <form action="" id="form">
+
+                <div id="intro">
+                    <h1 id="title">
+                        Calculadora IMC 
+                    </h1>
+    
+                    <div id="icon-modes">       
+                        <i id="moon" class="fa-solid fa-moon icon-selected"></i>         
+                        <i id="sun" class="fa-solid fa-sun"></i>
+                    </div>
+                </div>
+                
+
+
+
+                <div class="input-box">
+                    <label for="weight">Peso em kg</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="weight" required>
+                        <span>Kg</span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">Altura em metros</label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" step="0.01" id="height" required>
+                        <span>M</span>
+                    </div>
+                </div>
+
+                <button id="calculate">
+                    Calcular
+                </button>
+
+                <button type="reset" id="reset">
+                    Limpar
+                </button>
+
+            </form>
+
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="imc">
+                        <span id="value"></span>
+                        <span id="seu-imc">Seu IMC</span>
+                    </div>
+
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div id="more-info">
+                    <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm">
+                        Mais informações sobre o IMC
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
