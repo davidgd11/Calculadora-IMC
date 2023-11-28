@@ -6,7 +6,9 @@ form.addEventListener('submit' , function(event){
     const weight = document.getElementById('weight').value;
     const height = document.getElementById('height').value;
 
-    const imc = (weight / (height * height)).toFixed(2);
+    const height_2 = (height / 100);
+
+    const imc = (weight / (height_2 * height_2)).toFixed(2);
 
     const value = document.getElementById('value');
     let description = '';
